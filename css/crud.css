@@ -1,0 +1,124 @@
+.curd-interface {
+  width: 900px;
+}
+
+.crud-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  margin-bottom: 30px;
+  border-radius: 9px;
+  padding: 10px;
+  font-size: 1rem;
+  box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.22) inset,
+    0px 6px 8px 0px rgba(255, 255, 255, 0.1) inset,
+    0px 8px 17px 0px rgba(0, 0, 0, 0.29), 0px 30px 30px 0px rgba(0, 0, 0, 0.26),
+    0px 68px 41px 0px rgba(0, 0, 0, 0.15),
+    0px 120px 48px 0px rgba(0, 0, 0, 0.04),
+    0px 188px 52px 0px rgba(0, 0, 0, 0.01), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#include {
+  padding: 14px;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #3250b3;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.22) inset;
+}
+
+#include:hover {
+  background-color: #2b418a;
+}
+
+.crud-body {
+  background: #fff;
+  padding: 10px;
+  width: auto;
+  height: 600px;
+  overflow: auto;
+  font-size: 1.5rem;
+  border-radius: 9px;
+  box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.22) inset,
+    0px 6px 8px 0px rgba(255, 255, 255, 0.1) inset,
+    0px 8px 17px 0px rgba(0, 0, 0, 0.29), 0px 30px 30px 0px rgba(0, 0, 0, 0.26),
+    0px 68px 41px 0px rgba(0, 0, 0, 0.15),
+    0px 120px 48px 0px rgba(0, 0, 0, 0.04),
+    0px 188px 52px 0px rgba(0, 0, 0, 0.01), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.crud-body::-webkit-scrollbar {
+  width: 12px;
+  background-color: whitesmoke;
+}
+
+.crud-body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: darkgray;
+}
+
+table {
+  width: 100%;
+  border-spacing: 10px;
+  word-break: break-all;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: whitesmoke;
+}
+
+tr {
+  border-bottom: 1px solid #eeebeb !important;
+}
+
+tbody tr td {
+  vertical-align: text-top;
+  padding: 6px;
+  max-width: 50px;
+}
+
+thead tr th {
+  padding: 5px;
+  text-align: start;
+  margin-bottom: 50px;
+}
+
+tbody tr {
+  margin-bottom: 50px;
+}
+
+tbody tr td {
+  font-size: 1rem;
+  word-break: keep-all;
+}
+tbody tr td#btn-body {
+  text-align: center;
+}
+
+thead tr th[data-action] {
+  width: 100px !important;
+  text-align: center;
+}
+
+.btn {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background: #3939e2;
+}
+
+.btn-delete {
+  background: #cc3333;
+}

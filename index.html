@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Usuários</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <main class="container">
+    <div class="curd-interface">
+      <div class="crud-head">
+        <h1>Cadastro de Usuários</h1>
+        <button data-initModal id="include">Incluir</i></button>
+      </div>
+
+      <div class="crud-body">
+        <table id="tableUser">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Função</th>
+              <th>Salário</th>
+              <th data-action>Editar</th>
+              <th data-action>Excluir</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-container">
+        <div class="modal">
+          <a class="btn-close-modal">
+            <img src="./assets/x.svg" alt="">
+          </a>
+          <form id="form">
+            <label for="modal-name">Nome</label>
+            <input id="modal-name" data-index="new" type="text" required />
+            <label for="modal-function">Função</label>
+            <input id="modal-function" type="text" required />
+            <label for="modal-salary">Salário</label>
+            <input id="modal-salary" type="number" required />
+            <button id="btnSave">Salvar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
