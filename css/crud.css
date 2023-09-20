@@ -72,6 +72,17 @@ thead {
   background-color: whitesmoke;
 }
 
+thead tr th {
+  padding: 5px;
+  text-align: start;
+  margin-bottom: 50px;
+}
+
+thead tr th[data-action] {
+  width: 100px !important;
+  text-align: center;
+}
+
 tr {
   border-bottom: 1px solid #eeebeb !important;
 }
@@ -80,12 +91,6 @@ tbody tr td {
   vertical-align: text-top;
   padding: 6px;
   max-width: 50px;
-}
-
-thead tr th {
-  padding: 5px;
-  text-align: start;
-  margin-bottom: 50px;
 }
 
 tbody tr {
@@ -97,11 +102,6 @@ tbody tr td {
   word-break: keep-all;
 }
 tbody tr td#btn-body {
-  text-align: center;
-}
-
-thead tr th[data-action] {
-  width: 100px !important;
   text-align: center;
 }
 
@@ -121,4 +121,20 @@ thead tr th[data-action] {
 
 .btn-delete {
   background: #cc3333;
+}
+
+@media (max-width: 600px) {
+  thead tr th {
+    padding: 6px;
+    text-align: start;
+    margin-bottom: 50px;
+    font-size: 1rem;
+  }
+  .crud-head {
+    font-size: 0.85rem;
+  }
+  tbody tr td {
+    word-wrap: break-word;
+    max-width: min-content;
+  }
 }
